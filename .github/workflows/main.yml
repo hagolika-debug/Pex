@@ -1,0 +1,87 @@
+name: TikTok Video Generator
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          
+      - name: Download ZIP from Google Drive
+        shell: powershell
+        env:
+          GOOGLE_DRIVE_URL: ${{ secrets.GOOGLE_DRIVE_URL }}
+        run: |
+          # Use the secret URL
+          $url = "${{ secrets.GOOGLE_DRIVE_URL }}"
+          
+          # Create temporary directory
+          New-Item -ItemType Directory -Path "temp_download" -Force
+          
+          # Download the ZIP file
+          Invoke-WebRequest -Uri $url -OutFile "temp_download/downloaded.zip"
+          
+          # Extract the ZIP
+          Expand-Archive -Path "temp_download/downloaded.zip" -DestinationPath "."
+          
+          Write-Host "Files extracted:"
+          Get-ChildItem -Recurse
+
+      - name: Install Python dependencies
+        run: |
+          if (Test-Path "requirements.txt") {
+            pip install -r requirements.txt
+          } else {
+            Write-Error "requirements.txt not found!"
+            exit 1
+          }
+
+      - name: Install FFmpeg
+        run: |
+          choco install ffmpeg --yes
+          ffmpeg -version
+
+      - name: Run pex3.py
+        run: |
+          if (Test-Path "pex3.py") {
+            python pex3.py
+          } else {
+            Write-Error "pex3.py not found!"
+            exit 1
+          }
+
+      - name: Commit and push output files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Add only the required output files
+          if (Test-Path "tiktok_output") {
+            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt" | ForEach-Object {
+              git add $_.FullName
+            }
+            
+            $hasChanges = $(git status --porcelain | Measure-Object | % Count) -gt 0
+            
+            if ($hasChanges) {
+              git commit -m "Add generated TikTok videos and text files [skip ci]"
+              git push origin main
+            } else {
+              Write-Host "No output files to commit"
+            }
+          } else {
+            Write-Warning "tiktok_output directory not found"
+          }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
