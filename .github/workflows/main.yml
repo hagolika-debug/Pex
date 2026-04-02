@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -65,23 +68,17 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
-          # Add only the required output files
+            
           if (Test-Path "tiktok_output") {
-            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt" | ForEach-Object {
+            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt" -Recurse | ForEach-Object {
               git add $_.FullName
             }
-            
-            $hasChanges = $(git status --porcelain | Measure-Object | % Count) -gt 0
-            
+              
+            $hasChanges = $(git status --porcelain)
             if ($hasChanges) {
-              git commit -m "Add generated TikTok videos and text files [skip ci]"
-              git push origin main
-            } else {
-              Write-Host "No output files to commit"
+              git commit -m "Add generated TikTok outputs [skip ci]"
+              git push origin main  # GITHUB_TOKEN now has write access
             }
-          } else {
-            Write-Warning "tiktok_output directory not found"
           }
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
