@@ -42,61 +42,66 @@ jobs:
             exit 1
           }
 
-      # 🔧 ROBUST FFMPEG INSTALLATION (3 fallback methods)
       - name: Install FFmpeg
         shell: powershell
         run: |
-          Write-Host "🔧 Installing FFmpeg with fallback methods..."
+          Write-Host "Installing FFmpeg with fallback methods..."
           
           # Method 1: Try winget (most reliable on windows-latest)
-          Write-Host "→ Method 1: winget..."
-          if (winget install --id Gyan.FFmpeg -e --accept-package-agreements --accept-source-agreements 2>$null) {
-            $env:PATH = "$env:PATH;C:\Program Files\ffmpeg\bin"
-            if (ffmpeg -version 2>$null) {
-              Write-Host "✅ FFmpeg installed via winget"
+          Write-Host "Method 1: Trying winget..."
+          $wingetResult = winget install --id Gyan.FFmpeg -e --accept-package-agreements --accept-source-agreements --silent 2>&1
+          if ($LASTEXITCODE -eq 0) {
+            $ffmpegPath = "C:\Program Files\ffmpeg\bin"
+            if (Test-Path "$ffmpegPath\ffmpeg.exe") {
+              $env:PATH = "$ffmpegPath;$env:PATH"
+              [System.Environment]::SetEnvironmentVariable("PATH", "$env:PATH", "Process")
               ffmpeg -version | Select-Object -First 1
+              Write-Host "FFmpeg installed successfully via winget"
               exit 0
             }
           }
           
-          # Method 2: Direct download from gyan.dev (static builds)
-          Write-Host "→ Method 2: Direct download from gyan.dev..."
+          # Method 2: Direct download from GitHub releases
+          Write-Host "Method 2: Trying direct download..."
           $ffmpegUrl = "https://github.com/GyanD/codexffmpeg/releases/download/7.1/ffmpeg-7.1-essentials_build.zip"
           $zipPath = "$env:TEMP\ffmpeg.zip"
           $extractPath = "$env:TEMP\ffmpeg_extract"
           
           try {
-            Invoke-WebRequest -Uri $ffmpegUrl -OutFile $zipPath -TimeoutSec 120
+            Invoke-WebRequest -Uri $ffmpegUrl -OutFile $zipPath -TimeoutSec 120 -UseBasicParsing
             Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
-            $ffmpegBin = Get-ChildItem -Path $extractPath -Filter "ffmpeg.exe" -Recurse | Select-Object -First 1 | Split-Path
-            $env:PATH = "$ffmpegBin;$env:PATH"
-            [Environment]::SetEnvironmentVariable("PATH", "$ffmpegBin;$env:PATH", "Process")
-            
-            if (ffmpeg -version 2>$null) {
-              Write-Host "✅ FFmpeg installed via direct download"
+            $ffmpegExe = Get-ChildItem -Path $extractPath -Filter "ffmpeg.exe" -Recurse | Select-Object -First 1
+            if ($ffmpegExe) {
+              $ffmpegBinDir = $ffmpegExe.Directory.FullName
+              $env:PATH = "$ffmpegBinDir;$env:PATH"
+              [System.Environment]::SetEnvironmentVariable("PATH", "$env:PATH", "Process")
               ffmpeg -version | Select-Object -First 1
+              Write-Host "FFmpeg installed successfully via direct download"
               exit 0
             }
           } catch {
-            Write-Host "⚠️ Direct download failed: $_"
+            Write-Host "Direct download failed: $_"
           }
           
           # Method 3: Fallback to Chocolatey with retry
-          Write-Host "→ Method 3: Chocolatey with retry..."
+          Write-Host "Method 3: Trying Chocolatey..."
           for ($i = 1; $i -le 3; $i++) {
-            Write-Host "  Attempt $i/3..."
-            if (choco install ffmpeg --yes --limit-output 2>$null) {
-              if (ffmpeg -version 2>$null) {
-                Write-Host "✅ FFmpeg installed via Chocolatey"
+            Write-Host "Chocolatey attempt $i of 3..."
+            choco install ffmpeg --yes --limit-output --no-progress 2>$null
+            if ($LASTEXITCODE -eq 0) {
+              # Chocolatey usually adds ffmpeg to PATH automatically
+              $ffmpegCheck = Get-Command ffmpeg -ErrorAction SilentlyContinue
+              if ($ffmpegCheck) {
                 ffmpeg -version | Select-Object -First 1
+                Write-Host "FFmpeg installed successfully via Chocolatey"
                 exit 0
               }
             }
-            Start-Sleep -Seconds 10
+            Start-Sleep -Seconds 15
           }
           
           # All methods failed
-          Write-Host "❌ FFmpeg installation failed after all attempts"
+          Write-Host "ERROR: FFmpeg installation failed after all attempts"
           exit 1
 
       - name: Verify FFmpeg
