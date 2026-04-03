@@ -2,8 +2,8 @@ name: TikTok Video Generator
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:     # Allow manual trigger
 
 permissions:
   contents: write
@@ -26,41 +26,90 @@ jobs:
         env:
           GOOGLE_DRIVE_URL: ${{ secrets.GOOGLE_DRIVE_URL }}
         run: |
-          # Use the secret URL
           $url = "${{ secrets.GOOGLE_DRIVE_URL }}"
-          
-          # Create temporary directory
           New-Item -ItemType Directory -Path "temp_download" -Force
-          
-          # Download the ZIP file
           Invoke-WebRequest -Uri $url -OutFile "temp_download/downloaded.zip"
-          
-          # Extract the ZIP
           Expand-Archive -Path "temp_download/downloaded.zip" -DestinationPath "."
-          
-          Write-Host "Files extracted:"
-          Get-ChildItem -Recurse
+          Write-Host "✅ Files extracted:"
+          Get-ChildItem -Recurse | Select-Object FullName
 
       - name: Install Python dependencies
         run: |
           if (Test-Path "requirements.txt") {
             pip install -r requirements.txt
           } else {
-            Write-Error "requirements.txt not found!"
+            Write-Error "❌ requirements.txt not found!"
             exit 1
           }
 
+      # 🔧 ROBUST FFMPEG INSTALLATION (3 fallback methods)
       - name: Install FFmpeg
+        shell: powershell
         run: |
-          choco install ffmpeg --yes
+          Write-Host "🔧 Installing FFmpeg with fallback methods..."
+          
+          # Method 1: Try winget (most reliable on windows-latest)
+          Write-Host "→ Method 1: winget..."
+          if (winget install --id Gyan.FFmpeg -e --accept-package-agreements --accept-source-agreements 2>$null) {
+            $env:PATH = "$env:PATH;C:\Program Files\ffmpeg\bin"
+            if (ffmpeg -version 2>$null) {
+              Write-Host "✅ FFmpeg installed via winget"
+              ffmpeg -version | Select-Object -First 1
+              exit 0
+            }
+          }
+          
+          # Method 2: Direct download from gyan.dev (static builds)
+          Write-Host "→ Method 2: Direct download from gyan.dev..."
+          $ffmpegUrl = "https://github.com/GyanD/codexffmpeg/releases/download/7.1/ffmpeg-7.1-essentials_build.zip"
+          $zipPath = "$env:TEMP\ffmpeg.zip"
+          $extractPath = "$env:TEMP\ffmpeg_extract"
+          
+          try {
+            Invoke-WebRequest -Uri $ffmpegUrl -OutFile $zipPath -TimeoutSec 120
+            Expand-Archive -Path $zipPath -DestinationPath $extractPath -Force
+            $ffmpegBin = Get-ChildItem -Path $extractPath -Filter "ffmpeg.exe" -Recurse | Select-Object -First 1 | Split-Path
+            $env:PATH = "$ffmpegBin;$env:PATH"
+            [Environment]::SetEnvironmentVariable("PATH", "$ffmpegBin;$env:PATH", "Process")
+            
+            if (ffmpeg -version 2>$null) {
+              Write-Host "✅ FFmpeg installed via direct download"
+              ffmpeg -version | Select-Object -First 1
+              exit 0
+            }
+          } catch {
+            Write-Host "⚠️ Direct download failed: $_"
+          }
+          
+          # Method 3: Fallback to Chocolatey with retry
+          Write-Host "→ Method 3: Chocolatey with retry..."
+          for ($i = 1; $i -le 3; $i++) {
+            Write-Host "  Attempt $i/3..."
+            if (choco install ffmpeg --yes --limit-output 2>$null) {
+              if (ffmpeg -version 2>$null) {
+                Write-Host "✅ FFmpeg installed via Chocolatey"
+                ffmpeg -version | Select-Object -First 1
+                exit 0
+              }
+            }
+            Start-Sleep -Seconds 10
+          }
+          
+          # All methods failed
+          Write-Host "❌ FFmpeg installation failed after all attempts"
+          exit 1
+
+      - name: Verify FFmpeg
+        run: |
           ffmpeg -version
+          ffprobe -version
 
       - name: Run pex3.py
         run: |
           if (Test-Path "pex3.py") {
             python pex3.py
           } else {
-            Write-Error "pex3.py not found!"
+            Write-Error "❌ pex3.py not found!"
             exit 1
           }
 
@@ -70,15 +119,21 @@ jobs:
           git config --local user.name "GitHub Action"
             
           if (Test-Path "tiktok_output") {
-            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt" -Recurse | ForEach-Object {
-              git add $_.FullName
+            $files = Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt", "*.json" -Recurse
+            foreach ($file in $files) {
+              git add $file.FullName
             }
               
             $hasChanges = $(git status --porcelain)
             if ($hasChanges) {
-              git commit -m "Add generated TikTok outputs [skip ci]"
-              git push origin main  # GITHUB_TOKEN now has write access
+              git commit -m "🎬 Add generated TikTok outputs [skip ci]"
+              git push origin main
+              Write-Host "✅ Pushed $(($files | Measure-Object).Count) files"
+            } else {
+              Write-Host "⚠️ No new files to commit"
             }
+          } else {
+            Write-Host "⚠️ tiktok_output directory not found"
           }
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
