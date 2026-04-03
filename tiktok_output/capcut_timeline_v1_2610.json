@@ -1,0 +1,202 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V1",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 26.9,
+  "audio_file": "tiktok_output\\voiceover_v1_2610.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 35231065,
+        "source_file": "tiktok_output\\sec1_35231065.mp4",
+        "trim": {
+          "start": 0.28183716167528416,
+          "end": 5.321837161675284
+        },
+        "position": {
+          "start": 0,
+          "end": 4.54
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 7976077,
+        "source_file": "tiktok_output\\sec2_7976077.mp4",
+        "trim": {
+          "start": 4.392879338127712,
+          "end": 9.152879338127713
+        },
+        "position": {
+          "start": 4.54,
+          "end": 8.8
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 9772513,
+        "source_file": "tiktok_output\\sec3_9772513.mp4",
+        "trim": {
+          "start": 3.879613438466159,
+          "end": 8.319613438466158
+        },
+        "position": {
+          "start": 8.8,
+          "end": 12.74
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8233229,
+        "source_file": "tiktok_output\\sec4_8233229.mp4",
+        "trim": {
+          "start": 22.04251545481299,
+          "end": 26.402515454812992
+        },
+        "position": {
+          "start": 12.74,
+          "end": 16.6
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 6328475,
+        "source_file": "tiktok_output\\sec5_6328475.mp4",
+        "trim": {
+          "start": 18.36886932144847,
+          "end": 22.26886932144847
+        },
+        "position": {
+          "start": 16.6,
+          "end": 20
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 9212953,
+        "source_file": "tiktok_output\\sec6_9212953.mp4",
+        "trim": {
+          "start": 0.09216953357104904,
+          "end": 3.8121695335710477
+        },
+        "position": {
+          "start": 20,
+          "end": 23.22
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36434287,
+        "source_file": "tiktok_output\\sec7_36434287.mp4",
+        "trim": {
+          "start": 1.9594167496340014,
+          "end": 6.139416749634001
+        },
+        "position": {
+          "start": 23.22,
+          "end": 26.9
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "A silent explosion flattened an entire forest without leaving a crater.",
+        "position": {
+          "start": 0,
+          "end": 3.94
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "In 1908, Siberian herders watched the morning sky tear open.",
+        "position": {
+          "start": 4.54,
+          "end": 8.28
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "A blinding fireball vaporized the air and shattered every window.",
+        "position": {
+          "start": 8.8,
+          "end": 12.1
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Eighty million trees fell like matchsticks in perfect circles.",
+        "position": {
+          "start": 12.74,
+          "end": 15.8
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Scientists searched for decades but found only scorched earth.",
+        "position": {
+          "start": 16.6,
+          "end": 19.62
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "It was a meteor that exploded high above the ground.",
+        "position": {
+          "start": 20,
+          "end": 22.62
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "The sky\u2019s invisible hammer still reminds us how fragile Earth is.",
+        "position": {
+          "start": 23.22,
+          "end": 26.74
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      }
+    ]
+  }
+}

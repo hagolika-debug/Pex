@@ -1,0 +1,161 @@
+{
+  "title": "The Dancing Plague of 1518",
+  "audio": {
+    "path": "tiktok_output\\voiceover_v2_5170.wav",
+    "duration": 33.82
+  },
+  "sequence": [
+    {
+      "section": 1,
+      "voiceover": "In 1518, a woman stepped outside and refused to stop dancing.",
+      "audio_start": 0,
+      "audio_end": 4.16,
+      "audio_duration": 4.16,
+      "video_position_start": 0,
+      "video_position_end": 4.9,
+      "video_url": "https://videos.pexels.com/video-files/8348130/8348130-uhd_2160_4096_30fps.mp4",
+      "local_file": "tiktok_output\\sec1_8348130.mp4",
+      "pexels_id": 8348130,
+      "resolution": 4096,
+      "query_used": "bare feet stepping",
+      "trim": {
+        "start": 4.118923347472676,
+        "end": 9.518923347472676
+      },
+      "trim_duration": 5.4
+    },
+    {
+      "section": 2,
+      "voiceover": "Within a week, hundreds joined her, trapped in an invisible rhythm.",
+      "audio_start": 4.9,
+      "audio_end": 8.12,
+      "audio_duration": 3.22,
+      "video_position_start": 4.9,
+      "video_position_end": 8.78,
+      "video_url": "https://videos.pexels.com/video-files/7673221/7673221-uhd_2160_3840_25fps.mp4",
+      "local_file": "tiktok_output\\sec2_7673221.mp4",
+      "pexels_id": 7673221,
+      "resolution": 3840,
+      "query_used": "shadows moving rhythm",
+      "trim": {
+        "start": 10.772702714811082,
+        "end": 15.152702714811081
+      },
+      "trim_duration": 4.379999999999999
+    },
+    {
+      "section": 3,
+      "voiceover": "Their muscles tore and bones cracked, yet they could not halt.",
+      "audio_start": 8.78,
+      "audio_end": 11.98,
+      "audio_duration": 3.2,
+      "video_position_start": 8.78,
+      "video_position_end": 12.7,
+      "video_url": "https://videos.pexels.com/video-files/6916520/6916520-uhd_2160_4096_30fps.mp4",
+      "local_file": "tiktok_output\\sec3_6916520.mp4",
+      "pexels_id": 6916520,
+      "resolution": 4096,
+      "query_used": "sweating face closeup",
+      "trim": {
+        "start": 6.426852966184222,
+        "end": 10.846852966184223
+      },
+      "trim_duration": 4.42
+    },
+    {
+      "section": 4,
+      "voiceover": "Panic-stricken leaders built wooden stages and hired musicians to cure them.",
+      "audio_start": 12.7,
+      "audio_end": 16.24,
+      "audio_duration": 3.54,
+      "video_position_start": 12.7,
+      "video_position_end": 16.66,
+      "video_url": "https://videos.pexels.com/video-files/5095288/5095288-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec4_5095288.mp4",
+      "pexels_id": 5095288,
+      "resolution": 4096,
+      "query_used": "hands hammering wood",
+      "trim": {
+        "start": 0.92924720085539,
+        "end": 5.389247200855391
+      },
+      "trim_duration": 4.460000000000001
+    },
+    {
+      "section": 5,
+      "voiceover": "But the relentless drums only fueled the deadly, unstoppable frenzy.",
+      "audio_start": 16.66,
+      "audio_end": 20.42,
+      "audio_duration": 3.76,
+      "video_position_start": 16.66,
+      "video_position_end": 21.12,
+      "video_url": "https://videos.pexels.com/video-files/8348136/8348136-uhd_2160_4096_30fps.mp4",
+      "local_file": "tiktok_output\\sec5_8348136.mp4",
+      "pexels_id": 8348136,
+      "resolution": 4096,
+      "query_used": "rapid drumming hands",
+      "trim": {
+        "start": 4.95126594391841,
+        "end": 9.911265943918412
+      },
+      "trim_duration": 4.960000000000001
+    },
+    {
+      "section": 6,
+      "voiceover": "One by one, exhausted bodies collapsed into the thick street dust.",
+      "audio_start": 21.12,
+      "audio_end": 25.26,
+      "audio_duration": 4.14,
+      "video_position_start": 21.12,
+      "video_position_end": 25.9,
+      "video_url": "https://videos.pexels.com/video-files/35231065/14926170_2160_3840_32fps.mp4",
+      "local_file": "tiktok_output\\sec6_35231065.mp4",
+      "pexels_id": 35231065,
+      "resolution": 3840,
+      "query_used": "dust particles light",
+      "trim": {
+        "start": 1.282205126850376,
+        "end": 6.562205126850373
+      },
+      "trim_duration": 5.279999999999998
+    },
+    {
+      "section": 7,
+      "voiceover": "Historians blame toxic mold or a collective psychological breaking point.",
+      "audio_start": 25.9,
+      "audio_end": 29.86,
+      "audio_duration": 3.96,
+      "video_position_start": 25.9,
+      "video_position_end": 30,
+      "video_url": "https://videos.pexels.com/video-files/9772513/9772513-uhd_2160_3840_25fps.mp4",
+      "local_file": "tiktok_output\\sec7_9772513.mp4",
+      "pexels_id": 9772513,
+      "resolution": 3840,
+      "query_used": "cracked glass surface",
+      "trim": {
+        "start": 4.354344022640596,
+        "end": 8.954344022640598
+      },
+      "trim_duration": 4.600000000000001
+    },
+    {
+      "section": 8,
+      "voiceover": "A chilling reminder of how fragile our minds truly are.",
+      "audio_start": 30,
+      "audio_end": 33.62,
+      "audio_duration": 3.62,
+      "video_position_start": 30,
+      "video_position_end": 33.82,
+      "video_url": "https://videos.pexels.com/video-files/6628154/6628154-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec8_6628154.mp4",
+      "pexels_id": 6628154,
+      "resolution": 4096,
+      "query_used": "trembling hand closeup",
+      "trim": {
+        "start": 3.078940308783622,
+        "end": 7.398940308783622
+      },
+      "trim_duration": 4.32
+    }
+  ]
+}

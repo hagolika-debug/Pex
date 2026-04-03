@@ -1,0 +1,229 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V3",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 31.37,
+  "audio_file": "tiktok_output\\voiceover_v3_7647.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 35047933,
+        "source_file": "tiktok_output\\sec1_35047933.mp4",
+        "trim": {
+          "start": 2.9129135373601214,
+          "end": 8.372913537360121
+        },
+        "position": {
+          "start": 0,
+          "end": 4.96
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36171729,
+        "source_file": "tiktok_output\\sec2_36171729.mp4",
+        "trim": {
+          "start": 0.2212298471360354,
+          "end": 4.9612298471360345
+        },
+        "position": {
+          "start": 4.96,
+          "end": 9.2
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36434287,
+        "source_file": "tiktok_output\\sec3_36434287.mp4",
+        "trim": {
+          "start": 8.85251333261258,
+          "end": 13.43251333261258
+        },
+        "position": {
+          "start": 9.2,
+          "end": 13.28
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 5758772,
+        "source_file": "tiktok_output\\sec4_5758772.mp4",
+        "trim": {
+          "start": 13.969571184814091,
+          "end": 19.149571184814093
+        },
+        "position": {
+          "start": 13.28,
+          "end": 17.96
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 7814427,
+        "source_file": "tiktok_output\\sec5_7814427.mp4",
+        "trim": {
+          "start": 1.134242213387173,
+          "end": 4.914242213387171
+        },
+        "position": {
+          "start": 17.96,
+          "end": 21.24
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 35853611,
+        "source_file": "tiktok_output\\sec6_35853611.mp4",
+        "trim": {
+          "start": 0.6662061224641543,
+          "end": 4.646206122464155
+        },
+        "position": {
+          "start": 21.24,
+          "end": 24.72
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 35231065,
+        "source_file": "tiktok_output\\sec7_35231065.mp4",
+        "trim": {
+          "start": 0.3840204978497355,
+          "end": 4.304020497849737
+        },
+        "position": {
+          "start": 24.72,
+          "end": 28.14
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 33143041,
+        "source_file": "tiktok_output\\sec8_33143041.mp4",
+        "trim": {
+          "start": 1.2797770569779412,
+          "end": 5.009777056977942
+        },
+        "position": {
+          "start": 28.14,
+          "end": 31.37
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "In 1859, the sky turned blood red and telegraphs sparked.",
+        "position": {
+          "start": 0,
+          "end": 4.1
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Astronomer Richard Carrington watched a massive solar flare erupt.",
+        "position": {
+          "start": 4.96,
+          "end": 8.54
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Within hours, Earth\u2019s magnetic field collapsed under the storm.",
+        "position": {
+          "start": 9.2,
+          "end": 12.54
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Telegraph operators got shocked as machines caught fire spontaneously.",
+        "position": {
+          "start": 13.28,
+          "end": 17.18
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Auroras lit up the Caribbean, Cuba, and Hawaii.",
+        "position": {
+          "start": 17.96,
+          "end": 20.68
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "If it hit today, satellites would fry instantly.",
+        "position": {
+          "start": 21.24,
+          "end": 24.1
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Trillions in damage, global blackouts, and silent cities.",
+        "position": {
+          "start": 24.72,
+          "end": 28.14
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Space weather is real, and it\u2019s already brewing.",
+        "position": {
+          "start": 28.14,
+          "end": 31.22
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      }
+    ]
+  }
+}
