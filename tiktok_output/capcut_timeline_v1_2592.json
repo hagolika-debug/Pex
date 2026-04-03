@@ -1,0 +1,229 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V1",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 28.06,
+  "audio_file": "tiktok_output\\voiceover_v1_2592.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 9667990,
+        "source_file": "tiktok_output\\sec1_9667990.mp4",
+        "trim": {
+          "start": 48.53226439915899,
+          "end": 51.63226439915899
+        },
+        "position": {
+          "start": 0,
+          "end": 3.1
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 33938665,
+        "source_file": "tiktok_output\\sec2_33938665.mp4",
+        "trim": {
+          "start": 9.156337163793774,
+          "end": 12.256337163793773
+        },
+        "position": {
+          "start": 3.1,
+          "end": 6.2
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 35211012,
+        "source_file": "tiktok_output\\sec3_35211012.mp4",
+        "trim": {
+          "start": 4.874554381128814,
+          "end": 8.154554381128815
+        },
+        "position": {
+          "start": 6.2,
+          "end": 9.48
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 17949238,
+        "source_file": "tiktok_output\\sec4_17949238.mp4",
+        "trim": {
+          "start": 4.4287115438830735,
+          "end": 8.728711543883072
+        },
+        "position": {
+          "start": 9.48,
+          "end": 13.78
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 6797578,
+        "source_file": "tiktok_output\\sec5_6797578.mp4",
+        "trim": {
+          "start": 5.0410396285683,
+          "end": 8.6410396285683
+        },
+        "position": {
+          "start": 13.78,
+          "end": 17.38
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 34805796,
+        "source_file": "tiktok_output\\sec6_34805796.mp4",
+        "trim": {
+          "start": 4.683116621960316,
+          "end": 7.983116621960317
+        },
+        "position": {
+          "start": 17.38,
+          "end": 20.68
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 10448661,
+        "source_file": "tiktok_output\\sec7_10448661.mp4",
+        "trim": {
+          "start": 3.275289816440004,
+          "end": 7.295289816440004
+        },
+        "position": {
+          "start": 20.68,
+          "end": 24.7
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36257234,
+        "source_file": "tiktok_output\\sec8_36257234.mp4",
+        "trim": {
+          "start": 0.6472411340344005,
+          "end": 4.0072411340344
+        },
+        "position": {
+          "start": 24.7,
+          "end": 28.06
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "A sudden storm swallowed two hundred sailors in one night.",
+        "position": {
+          "start": 0,
+          "end": 3.1
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Calm waters reflected a pale, fading autumn sun.",
+        "position": {
+          "start": 3.1,
+          "end": 6.2
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Then the sky bruised purple and the wind screamed.",
+        "position": {
+          "start": 6.2,
+          "end": 9.48
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Waves climbed higher than lighthouses, swallowing wooden decks whole.",
+        "position": {
+          "start": 9.48,
+          "end": 13.78
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Freezing spray turned rigging into heavy, jagged glass.",
+        "position": {
+          "start": 13.78,
+          "end": 17.38
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Captains fought blind as compasses spun in the dark.",
+        "position": {
+          "start": 17.38,
+          "end": 20.68
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "By dawn, only splintered timber drifted across silent shores.",
+        "position": {
+          "start": 20.68,
+          "end": 24.7
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Nature never warned them before claiming the Great Lakes.",
+        "position": {
+          "start": 24.7,
+          "end": 28.04
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      }
+    ]
+  }
+}
