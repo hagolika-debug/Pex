@@ -25,7 +25,7 @@ jobs:
         uses: FedericoCarboni/setup-ffmpeg@v3
         with:
           ffmpeg-version: latest
-          architecture: 'x64'
+          architecture: x64
           
       - name: Download ZIP from Google Drive
         shell: powershell
