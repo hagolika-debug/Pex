@@ -49,7 +49,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           if (Test-Path "tiktok_output") {
-            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt", "*.json" -Recurse | ForEach-Object { git add $_.FullName }
+            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt" -Recurse | ForEach-Object { git add $_.FullName }
             $hasChanges = $(git status --porcelain)
             if ($hasChanges) {
               git commit -m "Add generated TikTok outputs [skip ci]"
