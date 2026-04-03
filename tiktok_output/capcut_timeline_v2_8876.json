@@ -1,0 +1,256 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V2",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 40.9,
+  "audio_file": "tiktok_output\\voiceover_v2_8876.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 8676947,
+        "source_file": "tiktok_output\\sec1_8676947.mp4",
+        "trim": {
+          "start": 0,
+          "end": 4.7
+        },
+        "position": {
+          "start": 0,
+          "end": 4.2
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 35843651,
+        "source_file": "tiktok_output\\sec2_35843651.mp4",
+        "trim": {
+          "start": 0,
+          "end": 4.52
+        },
+        "position": {
+          "start": 4.92,
+          "end": 8.94
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 7830152,
+        "source_file": "tiktok_output\\sec3_7830152.mp4",
+        "trim": {
+          "start": 5,
+          "end": 9.24
+        },
+        "position": {
+          "start": 9.7,
+          "end": 13.44
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8676945,
+        "source_file": "tiktok_output\\sec4_8676945.mp4",
+        "trim": {
+          "start": 2,
+          "end": 6.1
+        },
+        "position": {
+          "start": 14.28,
+          "end": 17.88
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 4904168,
+        "source_file": "tiktok_output\\sec5_4904168.mp4",
+        "trim": {
+          "start": 25,
+          "end": 29.8
+        },
+        "position": {
+          "start": 18.58,
+          "end": 22.88
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 6730264,
+        "source_file": "tiktok_output\\sec6_6730264.mp4",
+        "trim": {
+          "start": 13,
+          "end": 17.04
+        },
+        "position": {
+          "start": 23.42,
+          "end": 26.96
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 35231065,
+        "source_file": "tiktok_output\\sec7_35231065.mp4",
+        "trim": {
+          "start": 1,
+          "end": 5.279999999999999
+        },
+        "position": {
+          "start": 27.78,
+          "end": 31.56
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8516584,
+        "source_file": "tiktok_output\\sec8_8516584.mp4",
+        "trim": {
+          "start": 10,
+          "end": 14.4
+        },
+        "position": {
+          "start": 32.34,
+          "end": 36.24
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36171729,
+        "source_file": "tiktok_output\\sec9_36171729.mp4",
+        "trim": {
+          "start": 5,
+          "end": 9.26
+        },
+        "position": {
+          "start": 36.92,
+          "end": 40.9
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "A twenty-five foot wave of syrup just crushed an entire city block.",
+        "position": {
+          "start": 0,
+          "end": 4.2
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "January heat warmed a massive steel tank holding two million gallons.",
+        "position": {
+          "start": 4.92,
+          "end": 8.94
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Workers heard groaning metal, but nobody expected the sudden explosion.",
+        "position": {
+          "start": 9.7,
+          "end": 13.44
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Thick brown liquid rushed through streets at thirty-five miles per hour.",
+        "position": {
+          "start": 14.28,
+          "end": 17.88
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Buildings shattered, horses drowned, and firehouses collapsed under sticky weight.",
+        "position": {
+          "start": 18.58,
+          "end": 22.88
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Survivors fought through molasses that hardened like concrete in the cold.",
+        "position": {
+          "start": 23.42,
+          "end": 26.96
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Twenty-one people died, leaving a neighborhood permanently changed by sugar.",
+        "position": {
+          "start": 27.78,
+          "end": 31.56
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Engineers rewrote safety codes, proving even sweet things can kill.",
+        "position": {
+          "start": 32.34,
+          "end": 36.24
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "History hides strange disasters in plain sight. Follow for more.",
+        "position": {
+          "start": 36.92,
+          "end": 40.9
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      }
+    ]
+  }
+}

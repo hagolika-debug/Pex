@@ -1,0 +1,137 @@
+{
+  "title": "The 1962 Laughter Epidemic",
+  "audio": {
+    "path": "tiktok_output\\voiceover_v1_4809.wav",
+    "duration": 33.46
+  },
+  "sequence": [
+    {
+      "section": 1,
+      "voiceover": "In 1962, a single laugh sparked a contagious epidemic.",
+      "audio_start": 0,
+      "audio_end": 4.32,
+      "audio_duration": 4.32,
+      "video_url": "https://videos.pexels.com/video-files/26241446/11942278_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec1_26241446.mp4",
+      "pexels_id": 26241446,
+      "resolution": 3840,
+      "query_used": "ripples spreading raindrops window",
+      "trim": {
+        "start": 0,
+        "end": 4.82
+      }
+    },
+    {
+      "section": 2,
+      "voiceover": "It started at a Tanzanian boarding school, completely unprovoked.",
+      "audio_start": 5.02,
+      "audio_end": 8.88,
+      "audio_duration": 3.86,
+      "video_url": "https://videos.pexels.com/video-files/35231065/14926170_2160_3840_32fps.mp4",
+      "local_file": "tiktok_output\\sec2_35231065.mp4",
+      "pexels_id": 35231065,
+      "resolution": 3840,
+      "query_used": "dust particles light floating",
+      "trim": {
+        "start": 0,
+        "end": 4.359999999999999
+      }
+    },
+    {
+      "section": 3,
+      "voiceover": "Within weeks, the uncontrollable giggles spread across entire villages.",
+      "audio_start": 9.54,
+      "audio_end": 13.46,
+      "audio_duration": 3.92,
+      "video_url": "https://videos.pexels.com/video-files/31042591/13267294_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec3_31042591.mp4",
+      "pexels_id": 31042591,
+      "resolution": 3840,
+      "query_used": "flames spreading dry",
+      "trim": {
+        "start": 0,
+        "end": 4.42
+      }
+    },
+    {
+      "section": 4,
+      "voiceover": "Students couldn't eat, sleep, or even focus on exams.",
+      "audio_start": 14.32,
+      "audio_end": 17.34,
+      "audio_duration": 3.02,
+      "video_url": "https://videos.pexels.com/video-files/8056469/8056469-uhd_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec4_8056469.mp4",
+      "pexels_id": 8056469,
+      "resolution": 3840,
+      "query_used": "sweating forehead closeup",
+      "trim": {
+        "start": 2,
+        "end": 5.52
+      }
+    },
+    {
+      "section": 5,
+      "voiceover": "Panic forced authorities to shut down every local school.",
+      "audio_start": 18.16,
+      "audio_end": 21.06,
+      "audio_duration": 2.9,
+      "video_url": "https://videos.pexels.com/video-files/7691961/7691961-uhd_2160_4096_30fps.mp4",
+      "local_file": "tiktok_output\\sec5_7691961.mp4",
+      "pexels_id": 7691961,
+      "resolution": 4096,
+      "query_used": "door slamming shut",
+      "trim": {
+        "start": 9,
+        "end": 12.4
+      }
+    },
+    {
+      "section": 6,
+      "voiceover": "Doctors found no virus, only mass psychological hysteria.",
+      "audio_start": 21.82,
+      "audio_end": 25.2,
+      "audio_duration": 3.38,
+      "video_url": "https://videos.pexels.com/video-files/36171729/15339476_2160_3840_60fps.mp4",
+      "local_file": "tiktok_output\\sec6_36171729.mp4",
+      "pexels_id": 36171729,
+      "resolution": 3840,
+      "query_used": "pupil dilating dark",
+      "trim": {
+        "start": 3,
+        "end": 6.88
+      }
+    },
+    {
+      "section": 7,
+      "voiceover": "After months, the laughter finally faded as mysteriously as it began.",
+      "audio_start": 25.54,
+      "audio_end": 29.74,
+      "audio_duration": 4.2,
+      "video_url": "https://videos.pexels.com/video-files/13243682/13243682-uhd_2160_3840_24fps.mp4",
+      "local_file": "tiktok_output\\sec7_13243682.mp4",
+      "pexels_id": 13243682,
+      "resolution": 3840,
+      "query_used": "smoke swirling dark",
+      "trim": {
+        "start": 89,
+        "end": 93.7
+      }
+    },
+    {
+      "section": 8,
+      "voiceover": "History proves the mind can literally infect itself.",
+      "audio_start": 30,
+      "audio_end": 33.46,
+      "audio_duration": 3.46,
+      "video_url": "https://videos.pexels.com/video-files/7306362/7306362-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec8_7306362.mp4",
+      "pexels_id": 7306362,
+      "resolution": 4096,
+      "query_used": "mirror face reflection",
+      "trim": {
+        "start": 7,
+        "end": 10.94
+      }
+    }
+  ]
+}
