@@ -1,0 +1,153 @@
+{
+  "title": "The Firestorm History Forgot",
+  "audio": {
+    "path": "tiktok_output\\voiceover_v1_7436.wav",
+    "duration": 40.85
+  },
+  "sequence": [
+    {
+      "section": 1,
+      "voiceover": "A firestorm killed thousands, yet history completely forgot it.",
+      "audio_start": 0.16,
+      "audio_end": 2.4,
+      "audio_duration": 2.24,
+      "video_url": "https://videos.pexels.com/video-files/31042591/13267294_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec1_31042591.mp4",
+      "pexels_id": 31042591,
+      "resolution": 3840,
+      "query_used": "cinematic wildfire flames vertical slow motion",
+      "trim": {
+        "start": 0,
+        "end": 2.74
+      }
+    },
+    {
+      "section": 2,
+      "voiceover": "October 1871. Wisconsin\u2019s Peshtigo region faces a brutal drought.",
+      "audio_start": 4.16,
+      "audio_end": 8.32,
+      "audio_duration": 4.16,
+      "video_url": "https://videos.pexels.com/video-files/26596811/11968949_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec2_26596811.mp4",
+      "pexels_id": 26596811,
+      "resolution": 3840,
+      "query_used": "drought cracked earth dry forest vertical pan",
+      "trim": {
+        "start": 0,
+        "end": 4.66
+      }
+    },
+    {
+      "section": 3,
+      "voiceover": "Clearing fires merge into a monstrous, unstoppable wall of flame.",
+      "audio_start": 8.56,
+      "audio_end": 11.6,
+      "audio_duration": 3.04,
+      "video_url": "https://videos.pexels.com/video-files/31042591/13267294_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec3_31042591.mp4",
+      "pexels_id": 31042591,
+      "resolution": 3840,
+      "query_used": "advancing wildfire wall of flames vertical",
+      "trim": {
+        "start": 0,
+        "end": 3.54
+      }
+    },
+    {
+      "section": 4,
+      "voiceover": "Witnesses describe a spinning fire tornado lifting houses into the sky.",
+      "audio_start": 11.6,
+      "audio_end": 15.84,
+      "audio_duration": 4.24,
+      "video_url": "https://videos.pexels.com/video-files/5387195/5387195-hd_1080_1920_30fps.mp4",
+      "local_file": "tiktok_output\\sec4_5387195.mp4",
+      "pexels_id": 5387195,
+      "resolution": 1920,
+      "query_used": "fire tornado spinning flames vertical cinematic",
+      "trim": {
+        "start": 6,
+        "end": 10.74
+      }
+    },
+    {
+      "section": 5,
+      "voiceover": "Over twelve hundred people perish, many drowning in the river.",
+      "audio_start": 15.84,
+      "audio_end": 21.12,
+      "audio_duration": 5.28,
+      "video_url": "https://videos.pexels.com/video-files/35839120/15196867_2160_3840_60fps.mp4",
+      "local_file": "tiktok_output\\sec5_35839120.mp4",
+      "pexels_id": 35839120,
+      "resolution": 3840,
+      "query_used": "raging dark river water vertical slow motion",
+      "trim": {
+        "start": 0,
+        "end": 5.78
+      }
+    },
+    {
+      "section": 6,
+      "voiceover": "But Chicago\u2019s great fire steals every newspaper headline that week.",
+      "audio_start": 21.52,
+      "audio_end": 25.52,
+      "audio_duration": 4.0,
+      "video_url": "https://videos.pexels.com/video-files/8134314/8134314-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec6_8134314.mp4",
+      "pexels_id": 8134314,
+      "resolution": 4096,
+      "query_used": "vintage newspaper headlines vertical close up",
+      "trim": {
+        "start": 8,
+        "end": 12.5
+      }
+    },
+    {
+      "section": 7,
+      "voiceover": "Survivors rebuild quietly, their trauma buried beneath national distraction.",
+      "audio_start": 28.24,
+      "audio_end": 31.12,
+      "audio_duration": 2.88,
+      "video_url": "https://videos.pexels.com/video-files/10366714/10366714-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec7_10366714.mp4",
+      "pexels_id": 10366714,
+      "resolution": 4096,
+      "query_used": "forest regrowth after fire vertical slow pan",
+      "trim": {
+        "start": 17,
+        "end": 20.38
+      }
+    },
+    {
+      "section": 8,
+      "voiceover": "Today, a quiet museum honors the forgotten dead of Peshtigo.",
+      "audio_start": 31.44,
+      "audio_end": 34.24,
+      "audio_duration": 2.8,
+      "video_url": "https://videos.pexels.com/video-files/36842537/15609755_2160_3840_60fps.mp4",
+      "local_file": "tiktok_output\\sec8_36842537.mp4",
+      "pexels_id": 36842537,
+      "resolution": 3840,
+      "query_used": "museum memorial exhibit vertical slow zoom",
+      "trim": {
+        "start": 2,
+        "end": 5.3
+      }
+    },
+    {
+      "section": 9,
+      "voiceover": "Some tragedies vanish not from lack of impact, but timing.",
+      "audio_start": 36.16,
+      "audio_end": 40.85,
+      "audio_duration": 4.69,
+      "video_url": "https://videos.pexels.com/video-files/8062900/8062900-uhd_2160_3840_24fps.mp4",
+      "local_file": "tiktok_output\\sec9_8062900.mp4",
+      "pexels_id": 8062900,
+      "resolution": 3840,
+      "query_used": "time lapse clouds fading light vertical cinematic",
+      "trim": {
+        "start": 8,
+        "end": 11.3
+      }
+    }
+  ]
+}

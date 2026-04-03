@@ -1,0 +1,195 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V3",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 29.33,
+  "audio_file": "tiktok_output\\voiceover_v3_9718.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 5319457,
+        "source_file": "tiktok_output\\sec1_5319457.mp4",
+        "trim": {
+          "start": 0,
+          "end": 2.42
+        },
+        "position": {
+          "start": 0.08,
+          "end": 2.0
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 6702518,
+        "source_file": "tiktok_output\\sec2_6702518.mp4",
+        "trim": {
+          "start": 0,
+          "end": 5.38
+        },
+        "position": {
+          "start": 2.0,
+          "end": 6.88
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 32231624,
+        "source_file": "tiktok_output\\sec3_32231624.mp4",
+        "trim": {
+          "start": 3,
+          "end": 4.7
+        },
+        "position": {
+          "start": 9.44,
+          "end": 10.64
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 4945361,
+        "source_file": "tiktok_output\\sec4_4945361.mp4",
+        "trim": {
+          "start": 7,
+          "end": 9.26
+        },
+        "position": {
+          "start": 12.61,
+          "end": 14.37
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 29481814,
+        "source_file": "tiktok_output\\sec5_29481814.mp4",
+        "trim": {
+          "start": 5,
+          "end": 7.66
+        },
+        "position": {
+          "start": 16.68,
+          "end": 18.84
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 31525166,
+        "source_file": "tiktok_output\\sec6_31525166.mp4",
+        "trim": {
+          "start": 8,
+          "end": 11.46
+        },
+        "position": {
+          "start": 20.93,
+          "end": 23.88
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 6520230,
+        "source_file": "tiktok_output\\sec7_6520230.mp4",
+        "trim": {
+          "start": 13,
+          "end": 14.7
+        },
+        "position": {
+          "start": 25.69,
+          "end": 29.33
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "The 1904 Olympic marathon was a chaotic, deadly survival race.",
+        "position": {
+          "start": 0.08,
+          "end": 2.0
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Runners faced hundred-degree heat, toxic dust, and contaminated water stations.",
+        "position": {
+          "start": 2.0,
+          "end": 6.88
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "The early leader hitched a car ride for eleven miles.",
+        "position": {
+          "start": 9.44,
+          "end": 10.64
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "The eventual winner collapsed after consuming rat poison and brandy.",
+        "position": {
+          "start": 12.61,
+          "end": 14.37
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Another top finisher sprinted barefoot while being chased by wild dogs.",
+        "position": {
+          "start": 16.68,
+          "end": 18.84
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Only fourteen of thirty-two starters survived the brutal, unregulated course.",
+        "position": {
+          "start": 20.93,
+          "end": 23.88
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "It forced the Olympics to finally implement global safety standards.",
+        "position": {
+          "start": 25.69,
+          "end": 29.33
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      }
+    ]
+  }
+}

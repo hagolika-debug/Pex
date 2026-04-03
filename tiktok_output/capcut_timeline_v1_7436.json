@@ -1,0 +1,247 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V1",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 40.85,
+  "audio_file": "tiktok_output\\voiceover_v1_7436.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 31042591,
+        "source_file": "tiktok_output\\sec1_31042591.mp4",
+        "trim": {
+          "start": 0,
+          "end": 2.74
+        },
+        "position": {
+          "start": 0.16,
+          "end": 2.4
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 26596811,
+        "source_file": "tiktok_output\\sec2_26596811.mp4",
+        "trim": {
+          "start": 0,
+          "end": 4.66
+        },
+        "position": {
+          "start": 4.16,
+          "end": 8.32
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 31042591,
+        "source_file": "tiktok_output\\sec3_31042591.mp4",
+        "trim": {
+          "start": 0,
+          "end": 3.54
+        },
+        "position": {
+          "start": 8.56,
+          "end": 11.6
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 5387195,
+        "source_file": "tiktok_output\\sec4_5387195.mp4",
+        "trim": {
+          "start": 6,
+          "end": 10.74
+        },
+        "position": {
+          "start": 11.6,
+          "end": 15.84
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 35839120,
+        "source_file": "tiktok_output\\sec5_35839120.mp4",
+        "trim": {
+          "start": 0,
+          "end": 5.78
+        },
+        "position": {
+          "start": 15.84,
+          "end": 21.12
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8134314,
+        "source_file": "tiktok_output\\sec6_8134314.mp4",
+        "trim": {
+          "start": 8,
+          "end": 12.5
+        },
+        "position": {
+          "start": 21.52,
+          "end": 25.52
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 10366714,
+        "source_file": "tiktok_output\\sec7_10366714.mp4",
+        "trim": {
+          "start": 17,
+          "end": 20.38
+        },
+        "position": {
+          "start": 28.24,
+          "end": 31.12
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36842537,
+        "source_file": "tiktok_output\\sec8_36842537.mp4",
+        "trim": {
+          "start": 2,
+          "end": 5.3
+        },
+        "position": {
+          "start": 31.44,
+          "end": 34.24
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8062900,
+        "source_file": "tiktok_output\\sec9_8062900.mp4",
+        "trim": {
+          "start": 8,
+          "end": 11.3
+        },
+        "position": {
+          "start": 36.16,
+          "end": 40.85
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "A firestorm killed thousands, yet history completely forgot it.",
+        "position": {
+          "start": 0.16,
+          "end": 2.4
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "October 1871. Wisconsin\u2019s Peshtigo region faces a brutal drought.",
+        "position": {
+          "start": 4.16,
+          "end": 8.32
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Clearing fires merge into a monstrous, unstoppable wall of flame.",
+        "position": {
+          "start": 8.56,
+          "end": 11.6
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Witnesses describe a spinning fire tornado lifting houses into the sky.",
+        "position": {
+          "start": 11.6,
+          "end": 15.84
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Over twelve hundred people perish, many drowning in the river.",
+        "position": {
+          "start": 15.84,
+          "end": 21.12
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "But Chicago\u2019s great fire steals every newspaper headline that week.",
+        "position": {
+          "start": 21.52,
+          "end": 25.52
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Survivors rebuild quietly, their trauma buried beneath national distraction.",
+        "position": {
+          "start": 28.24,
+          "end": 31.12
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Today, a quiet museum honors the forgotten dead of Peshtigo.",
+        "position": {
+          "start": 31.44,
+          "end": 34.24
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Some tragedies vanish not from lack of impact, but timing.",
+        "position": {
+          "start": 36.16,
+          "end": 40.85
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      }
+    ]
+  }
+}

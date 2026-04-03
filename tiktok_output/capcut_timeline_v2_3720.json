@@ -1,0 +1,221 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V2",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 40.37,
+  "audio_file": "tiktok_output\\voiceover_v2_3720.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 12485407,
+        "source_file": "tiktok_output\\sec1_12485407.mp4",
+        "trim": {
+          "start": 0,
+          "end": 2.6
+        },
+        "position": {
+          "start": 0.08,
+          "end": 2.18
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 16627164,
+        "source_file": "tiktok_output\\sec2_16627164.mp4",
+        "trim": {
+          "start": 0,
+          "end": 2.58
+        },
+        "position": {
+          "start": 4.64,
+          "end": 6.72
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 5417147,
+        "source_file": "tiktok_output\\sec3_5417147.mp4",
+        "trim": {
+          "start": 4,
+          "end": 7.46
+        },
+        "position": {
+          "start": 7.36,
+          "end": 10.32
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 30553946,
+        "source_file": "tiktok_output\\sec4_30553946.mp4",
+        "trim": {
+          "start": 4,
+          "end": 7.35
+        },
+        "position": {
+          "start": 13.28,
+          "end": 16.12
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 7612014,
+        "source_file": "tiktok_output\\sec5_7612014.mp4",
+        "trim": {
+          "start": 10,
+          "end": 15.14
+        },
+        "position": {
+          "start": 17.96,
+          "end": 22.61
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8823070,
+        "source_file": "tiktok_output\\sec6_8823070.mp4",
+        "trim": {
+          "start": 2,
+          "end": 5.0600000000000005
+        },
+        "position": {
+          "start": 25.56,
+          "end": 28.12
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 30768055,
+        "source_file": "tiktok_output\\sec7_30768055.mp4",
+        "trim": {
+          "start": 4,
+          "end": 7.4
+        },
+        "position": {
+          "start": 30.52,
+          "end": 33.42
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 36480475,
+        "source_file": "tiktok_output\\sec8_36480475.mp4",
+        "trim": {
+          "start": 9,
+          "end": 12.14
+        },
+        "position": {
+          "start": 35.88,
+          "end": 40.37
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "In 1904, Russian warships opened fire on British fishing boats.",
+        "position": {
+          "start": 0.08,
+          "end": 2.18
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "The exhausted Baltic Fleet navigated the North Sea at midnight.",
+        "position": {
+          "start": 4.64,
+          "end": 6.72
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Nervous sailors spotted shadows and screamed Japanese torpedo boats were attacking.",
+        "position": {
+          "start": 7.36,
+          "end": 10.32
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Heavy artillery erupted. Two trawlers sank instantly. Fishermen drowned in freezing waters.",
+        "position": {
+          "start": 13.28,
+          "end": 16.12
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "London demanded justice. St. Petersburg claimed self-defense. Global war seemed inevitable.",
+        "position": {
+          "start": 17.96,
+          "end": 22.61
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "An international tribunal investigated the wreckage and found only harmless nets.",
+        "position": {
+          "start": 25.56,
+          "end": 28.12
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "Russia paid massive reparations. The humiliated fleet continued its doomed voyage.",
+        "position": {
+          "start": 30.52,
+          "end": 33.42
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      },
+      {
+        "text": "One foggy night, military paranoia nearly ignited a devastating world war.",
+        "position": {
+          "start": 35.88,
+          "end": 40.37
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000"
+        }
+      }
+    ]
+  }
+}
