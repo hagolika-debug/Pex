@@ -1,0 +1,142 @@
+{
+  "title": "The Year Summer Vanished",
+  "audio": {
+    "path": "tiktok_output\\voiceover_v1_6344.wav",
+    "duration": 25.37
+  },
+  "sequence": [
+    {
+      "section": 1,
+      "voiceover": "A single volcano eruption erased summer across the globe.",
+      "audio_start": 0,
+      "audio_end": 3.36,
+      "audio_duration": 3.36,
+      "video_position_start": 0,
+      "video_position_end": 3.8,
+      "video_url": "https://videos.pexels.com/video-files/8243620/8243620-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec1_8243620.mp4",
+      "pexels_id": 8243620,
+      "resolution": 4096,
+      "query_used": "dark ash falling",
+      "trim": {
+        "start": 19.022966082376627,
+        "end": 22.822966082376627
+      },
+      "trim_duration": 3.8
+    },
+    {
+      "section": 2,
+      "voiceover": "Toxic ash choked the sun, freezing harvests overnight.",
+      "audio_start": 3.8,
+      "audio_end": 7.2,
+      "audio_duration": 3.4,
+      "video_position_start": 3.8,
+      "video_position_end": 7.68,
+      "video_url": "https://videos.pexels.com/video-files/6650306/6650306-uhd_2160_4096_30fps.mp4",
+      "local_file": "tiktok_output\\sec2_6650306.mp4",
+      "pexels_id": 6650306,
+      "resolution": 4096,
+      "query_used": "frost covering leaves",
+      "trim": {
+        "start": 9.803624298505278,
+        "end": 13.68362429850528
+      },
+      "trim_duration": 3.88
+    },
+    {
+      "section": 3,
+      "voiceover": "Starving families boiled leather and scraped bark for food.",
+      "audio_start": 7.68,
+      "audio_end": 11.12,
+      "audio_duration": 3.44,
+      "video_position_start": 7.68,
+      "video_position_end": 11.6,
+      "video_url": "https://videos.pexels.com/video-files/4882774/4882774-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec3_4882774.mp4",
+      "pexels_id": 4882774,
+      "resolution": 4096,
+      "query_used": "rough hands scraping",
+      "trim": {
+        "start": 3.6992964565409707,
+        "end": 7.619296456540971
+      },
+      "trim_duration": 3.92
+    },
+    {
+      "section": 4,
+      "voiceover": "Scientists raced to invent new ways to survive.",
+      "audio_start": 11.6,
+      "audio_end": 14.36,
+      "audio_duration": 2.76,
+      "video_position_start": 11.6,
+      "video_position_end": 14.72,
+      "video_url": "https://videos.pexels.com/video-files/8471620/8471620-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec4_8471620.mp4",
+      "pexels_id": 8471620,
+      "resolution": 4096,
+      "query_used": "hands mixing liquids",
+      "trim": {
+        "start": 9.15426379518482,
+        "end": 12.27426379518482
+      },
+      "trim_duration": 3.120000000000001
+    },
+    {
+      "section": 5,
+      "voiceover": "Trapped indoors, a young writer channeled the endless gloom.",
+      "audio_start": 14.72,
+      "audio_end": 18.16,
+      "audio_duration": 3.44,
+      "video_position_start": 14.72,
+      "video_position_end": 18.76,
+      "video_url": "https://videos.pexels.com/video-files/10527010/10527010-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec5_10527010.mp4",
+      "pexels_id": 10527010,
+      "resolution": 4096,
+      "query_used": "ink dripping paper",
+      "trim": {
+        "start": 38.17109801074634,
+        "end": 42.21109801074634
+      },
+      "trim_duration": 4.040000000000001
+    },
+    {
+      "section": 6,
+      "voiceover": "Frankenstein was born from the shadows of that winter.",
+      "audio_start": 18.76,
+      "audio_end": 21.4,
+      "audio_duration": 2.64,
+      "video_position_start": 18.76,
+      "video_position_end": 21.72,
+      "video_url": "https://videos.pexels.com/video-files/8516626/8516626-uhd_2160_3840_30fps.mp4",
+      "local_file": "tiktok_output\\sec6_8516626.mp4",
+      "pexels_id": 8516626,
+      "resolution": 3840,
+      "query_used": "shadow moving wall",
+      "trim": {
+        "start": 2.511904113080933,
+        "end": 5.47190411308093
+      },
+      "trim_duration": 2.9599999999999973
+    },
+    {
+      "section": 7,
+      "voiceover": "The skies finally cleared, but humanity never forgot the cold.",
+      "audio_start": 21.72,
+      "audio_end": 25.36,
+      "audio_duration": 3.64,
+      "video_position_start": 21.72,
+      "video_position_end": 25.37,
+      "video_url": "https://videos.pexels.com/video-files/10273130/10273130-uhd_2160_4096_25fps.mp4",
+      "local_file": "tiktok_output\\sec7_10273130.mp4",
+      "pexels_id": 10273130,
+      "resolution": 4096,
+      "query_used": "cold breath exhale",
+      "trim": {
+        "start": 5.149151902361632,
+        "end": 8.799151902361634
+      },
+      "trim_duration": 3.650000000000002
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "project_name": "HistoryTheyHid_Synced_V1",
+  "resolution": "1080x1920",
+  "fps": 30,
+  "total_duration": 25.37,
+  "audio_file": "tiktok_output\\voiceover_v1_6344.wav",
+  "tracks": {
+    "video": [
+      {
+        "clip_id": 8243620,
+        "source_file": "tiktok_output\\sec1_8243620.mp4",
+        "trim": {
+          "start": 19.022966082376627,
+          "end": 22.822966082376627
+        },
+        "position": {
+          "start": 0,
+          "end": 3.8
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 6650306,
+        "source_file": "tiktok_output\\sec2_6650306.mp4",
+        "trim": {
+          "start": 9.803624298505278,
+          "end": 13.68362429850528
+        },
+        "position": {
+          "start": 3.8,
+          "end": 7.68
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 4882774,
+        "source_file": "tiktok_output\\sec3_4882774.mp4",
+        "trim": {
+          "start": 3.6992964565409707,
+          "end": 7.619296456540971
+        },
+        "position": {
+          "start": 7.68,
+          "end": 11.6
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8471620,
+        "source_file": "tiktok_output\\sec4_8471620.mp4",
+        "trim": {
+          "start": 9.15426379518482,
+          "end": 12.27426379518482
+        },
+        "position": {
+          "start": 11.6,
+          "end": 14.72
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 10527010,
+        "source_file": "tiktok_output\\sec5_10527010.mp4",
+        "trim": {
+          "start": 38.17109801074634,
+          "end": 42.21109801074634
+        },
+        "position": {
+          "start": 14.72,
+          "end": 18.76
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 8516626,
+        "source_file": "tiktok_output\\sec6_8516626.mp4",
+        "trim": {
+          "start": 2.511904113080933,
+          "end": 5.47190411308093
+        },
+        "position": {
+          "start": 18.76,
+          "end": 21.72
+        },
+        "scale": "cover"
+      },
+      {
+        "clip_id": 10273130,
+        "source_file": "tiktok_output\\sec7_10273130.mp4",
+        "trim": {
+          "start": 5.149151902361632,
+          "end": 8.799151902361634
+        },
+        "position": {
+          "start": 21.72,
+          "end": 25.37
+        },
+        "scale": "cover"
+      }
+    ],
+    "captions": [
+      {
+        "text": "A single volcano eruption erased summer across the globe.",
+        "position": {
+          "start": 0,
+          "end": 3.36
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Toxic ash choked the sun, freezing harvests overnight.",
+        "position": {
+          "start": 3.8,
+          "end": 7.2
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Starving families boiled leather and scraped bark for food.",
+        "position": {
+          "start": 7.68,
+          "end": 11.12
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Scientists raced to invent new ways to survive.",
+        "position": {
+          "start": 11.6,
+          "end": 14.36
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Trapped indoors, a young writer channeled the endless gloom.",
+        "position": {
+          "start": 14.72,
+          "end": 18.16
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "Frankenstein was born from the shadows of that winter.",
+        "position": {
+          "start": 18.76,
+          "end": 21.4
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      },
+      {
+        "text": "The skies finally cleared, but humanity never forgot the cold.",
+        "position": {
+          "start": 21.72,
+          "end": 25.36
+        },
+        "style": {
+          "font": "System Bold",
+          "size": 48,
+          "color": "#FFFFFF",
+          "stroke": "#000000",
+          "stroke_width": 3
+        }
+      }
+    ]
+  }
+}
