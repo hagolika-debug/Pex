@@ -24,7 +24,6 @@ jobs:
       - name: Setup FFmpeg  # ✅ Handles PATH automatically
         uses: FedericoCarboni/setup-ffmpeg@v3
         with:
-          ffmpeg-version: latest
           architecture: x64
           
       - name: Download ZIP from Google Drive
