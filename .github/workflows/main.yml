@@ -43,18 +43,3 @@ jobs:
 
       - name: Run pex3.py
         run: python pex3.py
-
-      - name: Commit and push output files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          if (Test-Path "tiktok_output") {
-            Get-ChildItem "tiktok_output" -Include "*.mp4", "*.txt" -Recurse | ForEach-Object { git add $_.FullName }
-            $hasChanges = $(git status --porcelain)
-            if ($hasChanges) {
-              git commit -m "Add generated TikTok outputs [skip ci]"
-              git push origin main
-            }
-          }
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
