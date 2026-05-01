@@ -10,36 +10,80 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
-    
+    runs-on: ubuntu-latest
+
+    # ── Kokoro-Web TTS runs as a sidecar service container ──────────────────────
+    # GitHub Actions on ubuntu-latest has full Docker support.
+    # The service is reachable at http://localhost:3000 from the job steps.
+    services:
+      kokoro-web:
+        image: ghcr.io/eduardolat/kokoro-web:latest
+        ports:
+          - 3000:3000
+        env:
+          KW_SECRET_API_KEY: ${{ secrets.KOKORO_API_KEY }}
+        options: >-
+          --health-cmd "curl -sf http://localhost:3000/v1/audio/speech || true"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          
-      - name: Setup FFmpeg  # ✅ Handles PATH automatically
+
+      - name: Setup FFmpeg
         uses: FedericoCarboni/setup-ffmpeg@v3
         with:
           architecture: x64
-          
+
       - name: Download ZIP from Google Drive
-        shell: powershell
         env:
           GOOGLE_DRIVE_URL: ${{ secrets.GOOGLE_DRIVE_URL }}
         run: |
-          $url = "${{ secrets.GOOGLE_DRIVE_URL }}"
-          New-Item -ItemType Directory -Path "temp_download" -Force
-          Invoke-WebRequest -Uri $url -OutFile "temp_download/downloaded.zip"
-          Expand-Archive -Path "temp_download/downloaded.zip" -DestinationPath "."
-          Write-Host "Files extracted:"
-          Get-ChildItem -Recurse
+          mkdir -p temp_download
+          curl -L "$GOOGLE_DRIVE_URL" -o temp_download/downloaded.zip
+          unzip temp_download/downloaded.zip -d .
+          echo "Files extracted:"
+          find . -maxdepth 2
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
+
+      # Patch config.json so the Kokoro API key matches the service container secret.
+      # This avoids storing the key in the committed config.json file.
+      - name: Inject Kokoro API key into config
+        env:
+          KOKORO_API_KEY: ${{ secrets.KOKORO_API_KEY }}
+        run: |
+          python - <<'EOF'
+          import json, os
+          with open("config.json") as f:
+              cfg = json.load(f)
+          cfg["kokoro_api_key"] = os.environ["KOKORO_API_KEY"]
+          cfg["kokoro_base_url"] = "http://localhost:3000/api/v1"
+          with open("config.json", "w") as f:
+              json.dump(cfg, f, indent=2)
+          print("✅ config.json updated with runtime Kokoro API key")
+          EOF
+
+      - name: Wait for Kokoro-Web to be ready
+        run: |
+          echo "Waiting for Kokoro-Web service..."
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:3000/v1/audio/speech > /dev/null 2>&1 || \
+               curl -s http://localhost:3000/v1/audio/speech | grep -q ""; then
+              echo "✅ Kokoro-Web is up"
+              break
+            fi
+            echo "  attempt $i/30..."
+            sleep 3
+          done
 
       - name: Run pex3.py
         run: python pex3.py
@@ -48,13 +92,12 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          if (Test-Path "tiktok_output") {
-            Get-ChildItem "tiktok_output" -Include "*.txt" -Recurse | ForEach-Object { git add $_.FullName }
-            $hasChanges = $(git status --porcelain)
-            if ($hasChanges) {
+          if [ -d "tiktok_output" ]; then
+            find tiktok_output -name "*.txt" | xargs git add 2>/dev/null || true
+            if git status --porcelain | grep -q .; then
               git commit -m "Add generated TikTok outputs [skip ci]"
               git push origin main
-            }
-          }
+            fi
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
