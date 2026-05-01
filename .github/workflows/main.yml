@@ -12,9 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # ── Kokoro-Web TTS runs as a sidecar service container ──────────────────────
-    # GitHub Actions on ubuntu-latest has full Docker support.
-    # The service is reachable at http://localhost:3000 from the job steps.
     services:
       kokoro-web:
         image: ghcr.io/eduardolat/kokoro-web:latest
@@ -55,8 +52,6 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      # Patch config.json so the Kokoro API key matches the service container secret.
-      # This avoids storing the key in the committed config.json file.
       - name: Inject Kokoro API key into config
         env:
           KOKORO_API_KEY: ${{ secrets.KOKORO_API_KEY }}
@@ -96,6 +91,7 @@ jobs:
             find tiktok_output -name "*.txt" | xargs git add 2>/dev/null || true
             if git status --porcelain | grep -q .; then
               git commit -m "Add generated TikTok outputs [skip ci]"
+              git pull --rebase origin main
               git push origin main
             fi
           fi
